@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+h1,h2,h3,h4,h5,h6,p
+  margin: 0px
+
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Open Sans', sans-serif
+
+a
+  text-decoration: none
+
+img
+  max-width: 100%
+
+.container
+  max-width: 1090px
+  margin: 0 auto
+  padding: 0px 15px
+  &__inner
+    width: 80%
+    margin: 0 auto
+
+.bg-option
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+.horizon-line
+  width: 100%
+  height: 1px
+  background: #ccc
+
+.title
+  font-size: 30px
+  font-weight: 500
+  text-align: center
+  margin-bottom: 40px
+  letter-spacing: 2px
+  text-transform: uppercase
+
+.form-group
+  margin-bottom: 20px
+
+.form-control
+  display: block
+  width: 100%
+  height: 40px
+  padding: 6px 10px
+  font-size: 15px
+  line-height: 1.4
+  color: #000
+  background: none
+  border: 1px solid #919191
+  border-radius: 0px
+  transition: .3s
+  &:focus
+    border-color: #000
+    outline: none
