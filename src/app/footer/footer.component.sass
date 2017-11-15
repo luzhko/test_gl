@@ -1,18 +1,24 @@
 footer
   background-color: #333
   padding: 40px 0px 60px
+
 .footer-bar
   display: flex
   flex-wrap: wrap
   justify-content: space-between
   align-items: center
   padding: 15px 0px
+
   &__info
     color: #fff
     font-weight: 600
     font-size: 15px
+    @media (max-width: 500px)
+      font-size: 12px
+
     &__content
       margin-bottom: 5px
+
       span
         display: inline-block
         margin-right: 3px

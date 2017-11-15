@@ -55,6 +55,7 @@ button
     border: 1px solid #000
     background: #fff
     color: #000
+
 button[disabled]
   cursor: not-allowed
 
@@ -65,6 +66,8 @@ button[disabled]
   max-width: 1090px
   margin: 0 auto
   padding: 0px 15px
+  width: 100%
+
   &__inner
     width: 80%
     margin: 0 auto
@@ -90,6 +93,7 @@ button[disabled]
 .form-group
   margin-bottom: 20px
   position: relative
+
   label
     font-size: 15px
     font-weight: 500
@@ -107,6 +111,7 @@ textarea.form-control
   padding: 6px 10px
   font-size: 15px
   line-height: 1.4
+  max-width: 100%
   color: #000
   background: none
   border: 1px solid #919191
@@ -115,12 +120,14 @@ textarea.form-control
   &:focus
     border-color: #000
     outline: none
+
   &__errors
     color: red
     position: absolute
     left: 0px
     bottom: -17px
     font-size: 13px
+
 ::-webkit-input-placeholder
   color: #838181
   font-size: 15px

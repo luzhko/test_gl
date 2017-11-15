@@ -7,7 +7,7 @@
                     {{ skill.name }}
                 </div>
                 <div class="skills__level" >
-                    <div *ngFor='let item of lengthLevel' [ngClass]="{circle: true, circle_empty: item > skill.level}">
+                    <div *ngFor='let item of lengthLevel; let i = index' [ngClass]="{circle: true, circle_empty: i >= skill.level}">
                     </div>
                 </div>
             </div>

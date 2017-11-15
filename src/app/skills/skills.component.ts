@@ -10,7 +10,7 @@ import { SkillsInterface } from '../interface/skills.interface';
 
 export class SkillsComponent implements OnInit {
     skills: SkillsInterface[];
-    lengthLevel: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    lengthLevel: number[] = Array(10);
     constructor (private skillsService: SkillsService) {}
 
     ngOnInit () {
