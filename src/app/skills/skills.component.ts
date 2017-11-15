@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SkillsService } from '../service/skills.service';
+import { SkillsInterface } from '../interface/skills.interface';
 
 @Component ({
     selector: 'app-skills-component',
@@ -6,12 +8,12 @@ import { Component } from '@angular/core';
     styleUrls: ['./skills.component.sass']
 })
 
-export class SkillsComponent {
-    skills = [
-        { name: "HTML5", level: 8 },
-        { name: "CSS3", level: 5 },
-        { name: "JavaScript", level: 10 },
-        { name: "ReactJS", level: 8 },
-        { name: "AngularJS", level: 8 },
-    ];
+export class SkillsComponent implements OnInit {
+    skills: SkillsInterface[];
+    lengthLevel: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    constructor (private skillsService: SkillsService) {}
+
+    ngOnInit () {
+        this.skills = this.skillsService.getSkills();
+    }
 }

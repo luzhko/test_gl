@@ -33,6 +33,34 @@ a
 img
   max-width: 100%
 
+button
+  display: inline-block
+  margin-bottom: 0
+  font-weight: 400
+  text-align: center
+  vertical-align: middle
+  cursor: pointer
+  border: 1px solid transparent
+  white-space: nowrap
+  padding: 7px 65px
+  font-size: 14px
+  background: #000
+  color: #fff
+  text-transform: uppercase
+  transition: .3s
+  &:active,
+  &:visited
+    outline: none
+  &:hover
+    border: 1px solid #000
+    background: #fff
+    color: #000
+button[disabled]
+  cursor: not-allowed
+
+.text-center
+  text-align: center
+
 .container
   max-width: 1090px
   margin: 0 auto
@@ -61,6 +89,16 @@ img
 
 .form-group
   margin-bottom: 20px
+  position: relative
+  label
+    font-size: 15px
+    font-weight: 500
+    margin-bottom: 5px
+    display: block
+
+textarea.form-control
+    height: 70px
+    resize: none
 
 .form-control
   display: block
@@ -77,3 +115,21 @@ img
   &:focus
     border-color: #000
     outline: none
+  &__errors
+    color: red
+    position: absolute
+    left: 0px
+    bottom: -17px
+    font-size: 13px
+::-webkit-input-placeholder
+  color: #838181
+  font-size: 15px
+  font-family: 'Open Sans', sans-serif
+::-moz-placeholder
+  color: #838181
+  font-size: 15px
+  font-family: 'Open Sans', sans-serif
+
+
+
+

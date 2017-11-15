@@ -6,20 +6,8 @@
                 <div class="skills__name">
                     {{ skill.name }}
                 </div>
-                <div class="skills__level">
-                    <div class="circle">
-                    </div>
-                    <div class="circle circle_empty">
-                    </div>
-                    <div class="circle circle_empty">
-                    </div>
-                    <div class="circle circle_empty">
-                    </div>
-                    <div class="circle circle_empty">
-                    </div>
-                    <div class="circle circle_empty">
-                    </div>
-                    <div class="circle circle_empty">
+                <div class="skills__level" >
+                    <div *ngFor='let item of lengthLevel' [ngClass]="{circle: true, circle_empty: item > skill.level}">
                     </div>
                 </div>
             </div>
