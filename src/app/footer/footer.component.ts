@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class FooterComponent {
-    logo: string = '../assets/img/logo_footer.png';
+    logo: string = './assets/img/logo_footer.png';
 }

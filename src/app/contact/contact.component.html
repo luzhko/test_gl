@@ -15,7 +15,7 @@
                     <div class="contact__form-input">
                         <div class="form-group">
                             <input name="tel" type="text" class="form-control" placeholder="Name" formControlName="tel">
-                            <span *ngIf="formErrors.tel" class="form-control__errors">The field has not passed validation</span>
+                            <span *ngIf="formErrors.tel" class="form-control__errors">The field has not passed validation (min two letters)</span>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <div class="contact__form-input">
                         <div class="form-group">
                             <input name="email" type="email" class="form-control" placeholder="Email" formControlName="email">
-                            <span  *ngIf="formErrors.email" class="form-control__errors">The field has not passed validation</span>
+                            <span  *ngIf="formErrors.email" class="form-control__errors">The field has not passed validation (email incorrect)</span>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                     <div class="contact__form-input">
                         <div class="form-group">
                             <textarea name="message" type="text" class="form-control" placeholder="Send a mesage" formControlName="message"></textarea>
-                            <span *ngIf="formErrors.message" class="form-control__errors">The field has not passed validation</span>
+                            <span *ngIf="formErrors.message" class="form-control__errors">The field has not passed validation (min two letters)</span>
                         </div>
                     </div>
                 </div>

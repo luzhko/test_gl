@@ -44,7 +44,7 @@ button
   white-space: nowrap
   padding: 7px 65px
   font-size: 14px
-  background: #000
+  background: #333
   color: #fff
   text-transform: uppercase
   transition: .3s
@@ -52,9 +52,9 @@ button
   &:visited
     outline: none
   &:hover
-    border: 1px solid #000
+    border: 1px solid #333
     background: #fff
-    color: #000
+    color: #333
 
 button[disabled]
   cursor: not-allowed
@@ -64,13 +64,16 @@ button[disabled]
 
 .container
   max-width: 1090px
+  min-width: 320px
   margin: 0 auto
   padding: 0px 15px
   width: 100%
 
   &__inner
-    width: 80%
+    width: 85%
     margin: 0 auto
+    @media (max-width: 992px)
+      width: 100%
 
 .bg-option
   background-repeat: no-repeat

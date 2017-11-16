@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class AboutComponent {
-    avatar: string = '../assets/img/avatar.png';
+    avatar: string = './assets/img/avatar.png';
 
 }

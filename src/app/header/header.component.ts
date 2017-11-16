@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderComponent {
-    bg: string = '../assets/img/header_bg.jpg';
-    logo: string = '../assets/img/logo_header.png';
+    bg: string = './assets/img/header_bg.jpg';
+    logo: string = './assets/img/logo_header.png';
 }
