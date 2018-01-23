@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="form-box">
+        <form #demoForm="ngForm" (ngSubmit)="onSubmit(demoForm)">
+            <div class="form-group">
+                <input required class="form-control" type="text" name="name" [(ngModel)]="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input required class="form-control" type="password" name="password" [(ngModel)]="password" placeholder="password">
+            </div>
+            <button type="submit"  class="button" >Registered</button>
+            <a class="go-back" routerLink="/" >Go to landing</a>
+        </form>
+    </div>
+</div>
+
+
+<!--<button (click)="save()">-->
+    <!--Save-->
+<!--</button>-->
+<!--<form>-->
+    <!--<div>-->
+        <!--&lt;!&ndash;<input type="text" name="name" placeholder="name" required [(ngModel)]="binding">&ndash;&gt;-->
+
+    <!--</div>-->
+    <!--<div>-->
+        <!--<input type="text" name="surnume" placeholder="surnume">-->
+
+    <!--</div>-->
+    <!--<button type="submit">save</button>-->
+<!--</form>-->
+
+
+<!--<form (ngSubmit)="save1()" #demoForm="ngForm">-->
+    <!--<div>-->
+        <!--<label for="name">User Name</label>-->
+        <!--<input type="text" id="name" minlength="5"-->
+               <!--required [(ngModel)]="userName" name="userName"-->
+               <!--#userNameRef="ngModel">-->
+        <!--<div [hidden]="userNameRef.valid || userNameRef.pristine"-->
+             <!--class="error-message">-->
+            <!--User Name is required-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<button type="submit">Submit</button>-->
+    <!--<button type="button" (click)="demoForm.reset()">Reset</button>-->
+<!--</form>-->
+
+
+<!--<button #fileInput (click)="parent()">Prent</button>-->
+<!--<button (click)="child()">Prent</button>-->

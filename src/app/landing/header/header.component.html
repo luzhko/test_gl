@@ -1,0 +1,32 @@
+<header class="bg-option" [ngStyle]="{'background-image': 'url(' + bg + ')'}">
+    <div class="container">
+        <div class="top-bar">
+            <a href="/" class="top-bar__logo">
+                <img [src]="logo" alt="logo">
+            </a>
+            <nav class="top-bar__nav">
+                <ul class="top-bar__nav__menu">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a routerLink="/login" routerLinkActive="active">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="slid">
+            <h1 class="slid__title">NAME SURNAME</h1>
+            <h2 class="slid__sub-title">FRONT-END DEVELOPER</h2>
+        </div>
+    </div>
+</header>

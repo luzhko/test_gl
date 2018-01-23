@@ -1,0 +1,16 @@
+<div class="container" id="skills">
+    <div class="container__inner">
+        <div class="box-skills">
+            <h3 class="title">Skills</h3>
+            <div class="skills" *ngFor="let skill of skills">
+                <div class="skills__name">
+                    {{ skill.name }}
+                </div>
+                <div class="skills__level" >
+                    <div *ngFor='let item of lengthLevel; let i = index' [ngClass]="{circle: true, circle_empty: i >= skill.level}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container" *ngIf="user">
+    <div class="users-list">
+        <div class="users-list__single">
+            <p>Name: {{ user.first_name }}</p>
+            <p>Name: {{ user.last_name }}</p>
+            <img [src]="user.avatar" alt="avatar">
+            <p>
+                <a [routerLink]="'/users'">Back</a>
+            </p>
+        </div>
+    </div>
+</div>
